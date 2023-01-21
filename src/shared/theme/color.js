@@ -1,4 +1,7 @@
-export const greyColor = '#F6FAF7';
-export const greenColor = '#303E27';
-export const softGreenColor = '#B4BB72';
-export const creamColor = '#E7EAA8';
+export const color = {
+    creamColor: '#E7EAA8',
+    blackColor: '#000000',
+    whiteColor: '#F6FAF7',
+    greenColor: '#00AA13',
+    softGreenColor: '#B4BB72',
+}
