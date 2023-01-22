@@ -1,11 +1,9 @@
-import React, {useRef} from "react";
-// import LottieView from "lottie-react-native"
+import React from "react";
 import {View, Text} from "react-native";
 import styles from "./styles";
 import {getToken} from "../../utils/token";
 
 const Splash = (props) => {
-    // const animation = useRef(null);
     const onNavigate = async () => {
         const token = await getToken();
         if (token) {
@@ -16,11 +14,10 @@ const Splash = (props) => {
     }
 
     React.useEffect(() => {
-        // animation.current?.play();
         setTimeout(() => {
             onNavigate()
-        }, 3000)
-    })
+        }, 2000)
+    }, [])
 
     return (
         <View style={styles.container}>
