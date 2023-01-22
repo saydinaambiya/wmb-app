@@ -4,7 +4,7 @@ const Menu = () => {
     return (
         <View style={{
             flex: 1,
-            justifyContent: 'center'
+            justifyContent: "center"
         }}>
             <Text>Menu Page</Text>
         </View>

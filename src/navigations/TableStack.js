@@ -8,7 +8,9 @@ const Stack = createStackNavigator();
 const TableStack = () => {
     return (
         <Stack.Navigator screenOptions={{ ...TransitionPresets.SlideFromRightIOS }}>
-            <Stack.Screen name="Table" component={Table} />
+            <Stack.Screen name="Table" component={Table} options={{
+                headerLeft: () => null,
+            }}/>
             <Stack.Screen name="AddTable" component={AddTable} />
             <Stack.Screen name="EditTable" component={EditTable} />
         </Stack.Navigator>

@@ -11,7 +11,7 @@ const FormInput = (props) => {
                 value={props.value}
                 onChangeText={props.onChange}
                 keyboardType={props.type}
-                secureTextEntry={props.isPassword}
+                secureTextEntry={props.secure}
             />
         </View>
     )

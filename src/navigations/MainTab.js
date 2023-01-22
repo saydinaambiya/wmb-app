@@ -24,7 +24,8 @@ const MainTab = () => {
                 component={TableStack}
                 options={{
                     tabBarLabel: () => null,
-                    tabBarIcon: ({ focused }) => <Icon name={focused ? "wallet" : "wallet-outline"} />
+                    tabBarIcon: ({ focused }) => <Icon name={focused ? "tv" : "tv-outline"} />,
+                    headerShown: false
                 }}
             />
             <Tabs.Screen
@@ -32,7 +33,8 @@ const MainTab = () => {
                 component={CustomerStack}
                 options={{
                     tabBarLabel: () => null,
-                    tabBarIcon: ({ focused }) => <Icon name={focused ? "people" : "people-outline"} />
+                    tabBarIcon: ({ focused }) => <Icon name={focused ? "people" : "people-outline"} />,
+                    headerShown: false
                 }}
             />
             <Tabs.Screen
@@ -40,7 +42,7 @@ const MainTab = () => {
                 component={Settings}
                 options={{
                     tabBarLabel: () => null,
-                    tabBarIcon: ({ focused }) => <Icon name={focused ? "settings" : "settings-outline"} />
+                    tabBarIcon: ({ focused }) => <Icon name={focused ? "settings" : "settings-outline"} />,
                 }}
             />
         </Tabs.Navigator>

@@ -4,7 +4,7 @@ const EditCustomer = () => {
     return (
         <View style={{
             flex: 1,
-            justifyContent: 'center'
+            justifyContent: "center"
         }}>
             <Text>Edit Customer</Text>
         </View>

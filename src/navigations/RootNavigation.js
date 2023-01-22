@@ -1,7 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
 import Splash from "../screens/Splash/Splash";
-import Login from "../screens/Login/Login";
 import MainTab from "./MainTab";
 import AuthStack from "./AuthStack";
 

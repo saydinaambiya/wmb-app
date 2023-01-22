@@ -1,12 +1,24 @@
-import { Text, View } from "react-native"
+import {Text, View} from "react-native"
+import Button from "../../components/Button/Button";
+import {removeToken} from "../../utils/token";
 
-const Settings = () => {
+const Settings = (props) => {
+
+    const onLogout = async () => {
+        await removeToken();
+        props.navigation.navigate("Auth");
+    }
+
     return (
         <View style={{
             flex: 1,
-            justifyContent: 'center'
+            alignItems: "center",
+            justifyContent: "center"
         }}>
-            <Text>Settings Page</Text>
+            <Button
+                text="Logout"
+                onPress={onLogout}
+            />
         </View>
     )
 }

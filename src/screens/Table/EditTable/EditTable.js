@@ -4,7 +4,7 @@ const EditTable = () => {
     return (
         <View style={{
             flex: 1,
-            justifyContent: 'center'
+            justifyContent: "center"
         }}>
             <Text>Edit Table</Text>
         </View>

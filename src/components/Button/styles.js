@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
-import { color } from "../../shared/theme/color";
+import { constantColor } from "../../shared/theme/constantColor";
 
 const styles = StyleSheet.create({
     button: (disabled) => ({
-        backgroundColor: color.greenColor,
+        backgroundColor: constantColor.greenColor,
         borderRadius:20,
         padding: 15,
         margin: 10,
@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
     }),
 
     buttonText: {
-        color: color.whiteColor,
+        color: constantColor.whiteColor,
         fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center'
+        fontWeight: "bold",
+        textAlign: "center"
     }
 })
 
