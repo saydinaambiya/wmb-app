@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
-import { constantColor } from "../../shared/theme/constantColor";
+import {StyleSheet} from "react-native";
+import {constantColor} from "../../shared/theme/constantColor";
 
 const styles = StyleSheet.create({
-    button: (disabled) => ({
-        backgroundColor: constantColor.greenColor,
-        borderRadius:20,
+    button: (disabled, isDelete) => ({
+        backgroundColor: isDelete ? constantColor.softGreenColor : constantColor.greenColor,
+        borderRadius: 20,
         padding: 15,
         margin: 10,
         opacity: disabled ? 0.5 : 1

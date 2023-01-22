@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-const EditMenu = () => {
+const EditMenu = (props) => {
     return (
         <View style={{
             flex: 1,

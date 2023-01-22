@@ -4,7 +4,7 @@ const Button = (props) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity
-                style={styles.button(props.disabled)}
+                style={styles.button(props.disabled, props.isDelete)}
                 onPress={props.onPress}
                 disabled={props.disabled}
             >

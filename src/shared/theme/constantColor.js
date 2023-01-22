@@ -4,4 +4,5 @@ export const constantColor = {
     whiteColor: "#F6FAF7",
     greenColor: "#00AA13",
     softGreenColor: "#B4BB72",
+    redColor: "#EE2737"
 }

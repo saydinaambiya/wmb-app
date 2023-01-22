@@ -4,15 +4,29 @@ import useFetchQuery from "../../hook/useFetchQuery";
 import {deleteMenuById, getMenu} from "../../services/menuApi";
 import React, {useEffect} from "react";
 import useFetchMutation from "../../hook/useFetchMutation";
+import {constantColor} from "../../shared/theme/constantColor";
 
 
 const RenderMenu = (props) => {
     const {menu, onDelete, onNavigate} = props;
 
     return (
-        <View>
-            <Text>{menu.item.name}</Text>
-            <Text>{menu.item.price}</Text>
+        <View
+            style={{
+                backgroundColor: constantColor.whiteColor,
+                padding: 20,
+                margin: 10,
+                borderRadius: 20
+            }}
+        >
+            <Text
+                style={{
+                    fontWeight: "bold",
+                    fontSize: 24
+                }}>
+                {menu.item.name}
+            </Text>
+            <Text>Rp. {menu.item.price}</Text>
             <Button
                 onPress={onNavigate(menu)}
                 text="Edit"
@@ -20,6 +34,7 @@ const RenderMenu = (props) => {
             <Button
                 onPress={onDelete(menu.item.id)}
                 text="Delete"
+                isDelete
             />
         </View>
     )
